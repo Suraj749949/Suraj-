@@ -1,0 +1,44 @@
+import java.util.*;
+public class Array {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int k[]=new int [5];//using the array
+	System.out.println("enetr the student name:- ");
+	String s=sc.next();
+	System.out.println("enetr the five subject marks:-");
+	for(int i=0;i<5;i++) {//using the for loop 
+		k[i]=sc.nextInt();
+	}
+	System.out.println("student name is:-"+s);
+	System.out.println("the marks of array:-");
+	for(int i=0;i<5;i++) {
+		System.out.println(k[i]);
+	}
+	int add=k[0]+k[1]+k[2]+k[3]+k[4];//addition formula 
+	int per=add/5;//formula 
+	System.out.println("the additon of marks:-"+add);
+	System.out.println("the percentage of marks:-"+per+"%");
+	if(per>=90 && per<=100) {//using if else 
+		System.out.println("Grade A+");
+	}
+	else if(per>=70 && per<=80) {
+		System.out.println("Grade A");
+	}
+	else if(per>=60 && per<=70) {
+		System.out.println("Grade B");
+	}
+	else if(per>=50 && per<=60) {
+		System.out.println("Grade C");
+	}
+	else if(per>=40 && per<=50) {
+		System.out.println("Grade D");
+	}
+	else if(per>=35 && per<=40) {
+		System.out.println("Grade");
+	}
+	else {
+		System.out.println("Fail");
+	}
+	
+}
+}
